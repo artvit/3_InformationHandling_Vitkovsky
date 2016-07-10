@@ -1,0 +1,592 @@
+2016-07-09 15:55:00,176 INFO  by.epam.parsing.util.Main [main] File has been read successfully 
+2016-07-09 15:55:00,367 INFO  by.epam.parsing.util.Main [main] Text parser has been created 
+2016-07-09 15:55:00,380 INFO  by.epam.parsing.util.Main [main] Text has been parsed 
+2016-07-09 15:55:00,381 INFO  by.epam.parsing.util.Main [main] Start sorting lexemes 
+2016-07-09 15:57:53,393 INFO  by.epam.parsing.util.Main [main] File has been read successfully 
+2016-07-09 15:57:53,403 INFO  by.epam.parsing.util.Main [main] Text parser has been created 
+2016-07-09 15:57:53,421 INFO  by.epam.parsing.util.Main [main] Text has been parsed 
+2016-07-09 15:57:53,424 INFO  by.epam.parsing.util.Main [main] Start sorting lexemes 
+2016-07-09 15:57:53,516 INFO  by.epam.parsing.util.Main [main] Result:
+' 
+, 
+. 
+; 
+a about against all also an and any appendreplacement appendtail are as at attempting attempts 
+be before beginning boolean boundaries buffer by 
+called can captured capturing cause changed character class collect computed constructs contains contents convenience convenient count create created 
+default defines desired details 
+each end engine entire every existing explicit 
+failure find finds for form from 
+group 
+if illegalstateexception in includes indicating indices information initially input interact interpreting into invoking is it its 
+looking lookingat 
+match matched matcher matches matching method methods modified more most 
+new next 
+obtained of on operation operations or order 
+part pattern performs provided 
+queried query querying 
+recent recomputed region regionend regionstart replaceall replaced replacing result returning returns 
+s scans see sequence some start starting state string strings subsequence subsequences subset success successful such 
+tandem that the theregion these this thrown to total 
+undefined useanchoringbounds used usetransparentbounds 
+via 
+way well which whose will with 
+ 
+2016-07-09 15:57:53,518 INFO  by.epam.parsing.util.Main [main] Text reporter has been created 
+2016-07-09 15:57:53,539 INFO  by.epam.parsing.util.Main [main] Result:
+An engine that performs match operations on a character sequence by interpreting a Pattern. 
+A matcher is created from a pattern by invoking the pattern' s matcher method. 
+The matches method attempts to match the entire input sequence against the pattern. 
+The lookingAt method attempts to match the input sequence, starting at the beginning, against the pattern. 
+The find method scans the input sequence looking for the next subsequence that matches the pattern. 
+Each of these methods returns a boolean indicating success or failure. More information about a successful match can be obtained by querying the state of the matcher. 
+A matcher finds matches in a subset of its input called the region. By default, the region contains all of the matcher' s input. The region can be modified via theregion method and queried via the regionStart and regionEnd methods. The way that the region boundaries interact with some pattern constructs can be changed. See useAnchoringBounds and useTransparentBounds for more details. 
+This class also defines methods for replacing matched subsequences with new strings whose contents can, if desired, be computed from the match result. The appendReplacement and appendTail methods can be used in tandem in order to collect the result into an existing string buffer, or the more convenient replaceAll method can be used to create a string in which every matching subsequence in the input sequence is replaced. 
+The explicit state of a matcher includes the start and end indices of the most recent successful match. It also includes the start and end indices of the input subsequence captured by each capturing group in the pattern as well as a total count of such subsequences. As a convenience, methods are also provided for returning these captured subsequences in string form. 
+The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an IllegalStateException to be thrown. The explicit state of a matcher is recomputed by every match operation. 
+ 
+2016-07-09 16:13:42,393 INFO  by.epam.parsing.util.Main [main] File has been read successfully 
+2016-07-09 16:13:42,414 INFO  by.epam.parsing.util.Main [main] Text parser has been created 
+2016-07-09 16:13:42,421 ERROR by.epam.parsing.parser.SentenceParser [main] Cannot add parsed lexeme to text by.epam.parsing.exception.ParserException: Cannot parse lexeme: pattern's
+	at by.epam.parsing.parser.SentenceParser.createLexeme(SentenceParser.java:49)
+	at by.epam.parsing.parser.SentenceParser.parse(SentenceParser.java:30)
+	at by.epam.parsing.parser.ParagraphParser.parse(ParagraphParser.java:28)
+	at by.epam.parsing.parser.TextParser.parse(TextParser.java:29)
+	at by.epam.parsing.util.Main.main(Main.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+
+2016-07-09 16:13:42,444 ERROR by.epam.parsing.parser.SentenceParser [main] Cannot add parsed lexeme to text by.epam.parsing.exception.ParserException: Cannot parse lexeme: matcher's
+	at by.epam.parsing.parser.SentenceParser.createLexeme(SentenceParser.java:49)
+	at by.epam.parsing.parser.SentenceParser.parse(SentenceParser.java:30)
+	at by.epam.parsing.parser.ParagraphParser.parse(ParagraphParser.java:28)
+	at by.epam.parsing.parser.TextParser.parse(TextParser.java:29)
+	at by.epam.parsing.util.Main.main(Main.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+
+2016-07-09 16:13:42,449 INFO  by.epam.parsing.util.Main [main] Text has been parsed 
+2016-07-09 16:13:42,467 INFO  by.epam.parsing.util.Main [main] Start sorting lexemes 
+2016-07-09 16:13:42,559 INFO  by.epam.parsing.util.Main [main] Result:
+, 
+. 
+; 
+a about against all also an and any appendreplacement appendtail are as at attempting attempts 
+be before beginning boolean boundaries buffer by 
+called can captured capturing cause changed character class collect computed constructs contains contents convenience convenient count create created 
+default defines desired details 
+each end engine entire every existing explicit 
+failure find finds for form from 
+group 
+if illegalstateexception in includes indicating indices information initially input interact interpreting into invoking is it its 
+looking lookingat 
+match matched matcher matches matching method methods modified more most 
+new next 
+obtained of on operation operations or order 
+part pattern performs provided 
+queried query querying 
+recent recomputed region regionend regionstart replaceall replaced replacing result returning returns 
+scans see sequence some start starting state string strings subsequence subsequences subset success successful such 
+tandem that the theregion these this thrown to total 
+undefined useanchoringbounds used usetransparentbounds 
+via 
+way well which whose will with 
+ 
+2016-07-09 16:13:42,560 INFO  by.epam.parsing.util.Main [main] Text reporter has been created 
+2016-07-09 16:13:42,586 INFO  by.epam.parsing.util.Main [main] Result:
+An engine that performs match operations on a character sequence by interpreting a Pattern. 
+A matcher is created from a pattern by invoking the matcher method. 
+The matches method attempts to match the entire input sequence against the pattern. 
+The lookingAt method attempts to match the input sequence, starting at the beginning, against the pattern. 
+The find method scans the input sequence looking for the next subsequence that matches the pattern. 
+Each of these methods returns a boolean indicating success or failure. More information about a successful match can be obtained by querying the state of the matcher. 
+A matcher finds matches in a subset of its input called the region. By default, the region contains all of the input. The region can be modified via theregion method and queried via the regionStart and regionEnd methods. The way that the region boundaries interact with some pattern constructs can be changed. See useAnchoringBounds and useTransparentBounds for more details. 
+This class also defines methods for replacing matched subsequences with new strings whose contents can, if desired, be computed from the match result. The appendReplacement and appendTail methods can be used in tandem in order to collect the result into an existing string buffer, or the more convenient replaceAll method can be used to create a string in which every matching subsequence in the input sequence is replaced. 
+The explicit state of a matcher includes the start and end indices of the most recent successful match. It also includes the start and end indices of the input subsequence captured by each capturing group in the pattern as well as a total count of such subsequences. As a convenience, methods are also provided for returning these captured subsequences in string form. 
+The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an IllegalStateException to be thrown. The explicit state of a matcher is recomputed by every match operation. 
+ 
+2016-07-09 17:51:34,134 INFO  by.epam.parsing.util.Main [main] File has been read successfully 
+2016-07-09 17:51:34,157 INFO  by.epam.parsing.util.Main [main] Text parser has been created 
+2016-07-09 17:51:34,159 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+An engine that performs match operations on a character sequence by interpreting a Pattern. 
+2016-07-09 17:51:34,163 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+An engine that performs match operations on a character sequence by interpreting a Pattern. 
+2016-07-09 17:51:34,165 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: An 
+2016-07-09 17:51:34,165 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: engine 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: that 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: performs 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: operations 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: on 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,166 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: character 
+2016-07-09 17:51:34,167 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: sequence 
+2016-07-09 17:51:34,167 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: by 
+2016-07-09 17:51:34,167 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: interpreting 
+2016-07-09 17:51:34,168 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,168 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: Pattern 
+2016-07-09 17:51:34,168 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,172 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+A matcher is created from a pattern by invoking the pattern's matcher method. Once created, a matcher can be used to perform three different kinds of match operations: 
+2016-07-09 17:51:34,172 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+A matcher is created from a pattern by invoking the pattern's matcher method. 
+2016-07-09 17:51:34,173 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: A 
+2016-07-09 17:51:34,173 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,173 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: is 
+2016-07-09 17:51:34,174 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: created 
+2016-07-09 17:51:34,174 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: from 
+2016-07-09 17:51:34,175 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,175 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern 
+2016-07-09 17:51:34,175 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: by 
+2016-07-09 17:51:34,175 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: invoking 
+2016-07-09 17:51:34,175 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,175 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern's 
+2016-07-09 17:51:34,175 ERROR by.epam.parsing.parser.SentenceParser [main] Cannot add parsed lexeme to text by.epam.parsing.exception.ParserException: Cannot parse lexeme: pattern's
+	at by.epam.parsing.parser.SentenceParser.createLexeme(SentenceParser.java:50)
+	at by.epam.parsing.parser.SentenceParser.parse(SentenceParser.java:31)
+	at by.epam.parsing.parser.ParagraphParser.parse(ParagraphParser.java:29)
+	at by.epam.parsing.parser.TextParser.parse(TextParser.java:30)
+	at by.epam.parsing.util.Main.main(Main.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+
+2016-07-09 17:51:34,196 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,196 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: method 
+2016-07-09 17:51:34,196 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,198 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+The matches method attempts to match the entire input sequence against the pattern. 
+2016-07-09 17:51:34,198 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The matches method attempts to match the entire input sequence against the pattern. 
+2016-07-09 17:51:34,199 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,199 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matches 
+2016-07-09 17:51:34,199 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: method 
+2016-07-09 17:51:34,199 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: attempts 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: to 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: entire 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: sequence 
+2016-07-09 17:51:34,200 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: against 
+2016-07-09 17:51:34,201 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,201 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern 
+2016-07-09 17:51:34,201 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,201 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+The lookingAt method attempts to match the input sequence, starting at the beginning, against the pattern. 
+2016-07-09 17:51:34,201 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The lookingAt method attempts to match the input sequence, starting at the beginning, against the pattern. 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: lookingAt 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: method 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: attempts 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: to 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,202 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: sequence 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: starting 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: at 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: beginning 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: against 
+2016-07-09 17:51:34,203 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,204 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern 
+2016-07-09 17:51:34,204 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,204 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+The find method scans the input sequence looking for the next subsequence that matches the pattern. 
+2016-07-09 17:51:34,204 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The find method scans the input sequence looking for the next subsequence that matches the pattern. 
+2016-07-09 17:51:34,204 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,204 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: find 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: method 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: scans 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: sequence 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: looking 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: for 
+2016-07-09 17:51:34,205 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: next 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subsequence 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: that 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matches 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern 
+2016-07-09 17:51:34,206 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,207 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+Each of these methods returns a boolean indicating success or failure. More information about a successful match can be obtained by querying the state of the matcher. 
+2016-07-09 17:51:34,209 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+Each of these methods returns a boolean indicating success or failure. 
+2016-07-09 17:51:34,211 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: Each 
+2016-07-09 17:51:34,212 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,213 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: these 
+2016-07-09 17:51:34,213 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: methods 
+2016-07-09 17:51:34,213 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: returns 
+2016-07-09 17:51:34,213 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,213 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: boolean 
+2016-07-09 17:51:34,214 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: indicating 
+2016-07-09 17:51:34,214 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: success 
+2016-07-09 17:51:34,214 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: or 
+2016-07-09 17:51:34,214 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: failure 
+2016-07-09 17:51:34,214 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,214 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+More information about a successful match can be obtained by querying the state of the matcher. 
+2016-07-09 17:51:34,215 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: More 
+2016-07-09 17:51:34,216 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: information 
+2016-07-09 17:51:34,216 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: about 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: successful 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: can 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: obtained 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: by 
+2016-07-09 17:51:34,218 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: querying 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: state 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+A matcher finds matches in a subset of its input called the region. By default, the region contains all of the matcher's input. The region can be modified via theregion method and queried via the regionStart and regionEnd methods. The way that the region boundaries interact with some pattern constructs can be changed. See useAnchoringBounds and useTransparentBounds for more details. 
+2016-07-09 17:51:34,219 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+A matcher finds matches in a subset of its input called the region. 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: A 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: finds 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matches 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subset 
+2016-07-09 17:51:34,220 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: its 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: called 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: region 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+By default, the region contains all of the matcher's input. 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: By 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: default 
+2016-07-09 17:51:34,221 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: region 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: contains 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: all 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher's 
+2016-07-09 17:51:34,222 ERROR by.epam.parsing.parser.SentenceParser [main] Cannot add parsed lexeme to text by.epam.parsing.exception.ParserException: Cannot parse lexeme: matcher's
+	at by.epam.parsing.parser.SentenceParser.createLexeme(SentenceParser.java:50)
+	at by.epam.parsing.parser.SentenceParser.parse(SentenceParser.java:31)
+	at by.epam.parsing.parser.ParagraphParser.parse(ParagraphParser.java:29)
+	at by.epam.parsing.parser.TextParser.parse(TextParser.java:30)
+	at by.epam.parsing.util.Main.main(Main.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,222 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,223 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The region can be modified via theregion method and queried via the regionStart and regionEnd methods. 
+2016-07-09 17:51:34,227 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,227 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: region 
+2016-07-09 17:51:34,228 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: can 
+2016-07-09 17:51:34,228 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,228 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: modified 
+2016-07-09 17:51:34,228 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: via 
+2016-07-09 17:51:34,228 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: theregion 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: method 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: and 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: queried 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: via 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: regionStart 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: and 
+2016-07-09 17:51:34,229 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: regionEnd 
+2016-07-09 17:51:34,230 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: methods 
+2016-07-09 17:51:34,230 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,230 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The way that the region boundaries interact with some pattern constructs can be changed. 
+2016-07-09 17:51:34,231 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,231 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: way 
+2016-07-09 17:51:34,231 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: that 
+2016-07-09 17:51:34,231 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,231 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: region 
+2016-07-09 17:51:34,231 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: boundaries 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: interact 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: with 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: some 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: constructs 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: can 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: changed 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,232 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+See useAnchoringBounds and useTransparentBounds for more details. 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: See 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: useAnchoringBounds 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: and 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: useTransparentBounds 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: for 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: more 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: details 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+This class also defines methods for replacing matched subsequences with new strings whose contents can, if desired, be computed from the match result. The appendReplacement and appendTail methods can be used in tandem in order to collect the result into an existing string buffer, or the more convenient replaceAll method can be used to create a string in which every matching subsequence in the input sequence is replaced. 
+2016-07-09 17:51:34,233 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+This class also defines methods for replacing matched subsequences with new strings whose contents can, if desired, be computed from the match result. 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: This 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: class 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: also 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: defines 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: methods 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: for 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: replacing 
+2016-07-09 17:51:34,234 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matched 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subsequences 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: with 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: new 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: strings 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: whose 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: contents 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: can 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: if 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: desired 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,235 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: computed 
+2016-07-09 17:51:34,236 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: from 
+2016-07-09 17:51:34,236 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,236 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,236 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: result 
+2016-07-09 17:51:34,236 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,236 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The appendReplacement and appendTail methods can be used in tandem in order to collect the result into an existing string buffer, or the more convenient replaceAll method can be used to create a string in which every matching subsequence in the input sequence is replaced. 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: appendReplacement 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: and 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: appendTail 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: methods 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: can 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: used 
+2016-07-09 17:51:34,237 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: tandem 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: order 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: to 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: collect 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: result 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: into 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: an 
+2016-07-09 17:51:34,238 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: existing 
+2016-07-09 17:51:34,239 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: string 
+2016-07-09 17:51:34,239 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: buffer 
+2016-07-09 17:51:34,239 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,239 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: or 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: more 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: convenient 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: replaceAll 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: method 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: can 
+2016-07-09 17:51:34,241 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: used 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: to 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: create 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: string 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: which 
+2016-07-09 17:51:34,242 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: every 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matching 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subsequence 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: sequence 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: is 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: replaced 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+The explicit state of a matcher includes the start and end indices of the most recent successful match. It also includes the start and end indices of the input subsequence captured by each capturing group in the pattern as well as a total count of such subsequences. As a convenience, methods are also provided for returning these captured subsequences in string form. 
+2016-07-09 17:51:34,243 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The explicit state of a matcher includes the start and end indices of the most recent successful match. 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: explicit 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: state 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: includes 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: start 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: and 
+2016-07-09 17:51:34,244 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: end 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: indices 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: most 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: recent 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: successful 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,245 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+It also includes the start and end indices of the input subsequence captured by each capturing group in the pattern as well as a total count of such subsequences. 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: It 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: also 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: includes 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: start 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: and 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: end 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: indices 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,246 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: input 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subsequence 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: captured 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: by 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: each 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: capturing 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: group 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: the 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: pattern 
+2016-07-09 17:51:34,247 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: as 
+2016-07-09 17:51:34,248 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: well 
+2016-07-09 17:51:34,248 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: as 
+2016-07-09 17:51:34,248 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,248 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: total 
+2016-07-09 17:51:34,249 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: count 
+2016-07-09 17:51:34,249 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,249 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: such 
+2016-07-09 17:51:34,249 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subsequences 
+2016-07-09 17:51:34,249 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,249 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+As a convenience, methods are also provided for returning these captured subsequences in string form. 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: As 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: convenience 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: , 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: methods 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: are 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: also 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: provided 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: for 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: returning 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: these 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: captured 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: subsequences 
+2016-07-09 17:51:34,250 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: in 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: string 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: form 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.TextParser [main] Parsing paragraph:
+The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an IllegalStateException to be thrown. The explicit state of a matcher is recomputed by every match operation. 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an IllegalStateException to be thrown. 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: explicit 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: state 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,251 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: is 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: initially 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: undefined 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: ; 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: attempting 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: to 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: query 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: any 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: part 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,252 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: it 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: before 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: successful 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: will 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: cause 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: an 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: IllegalStateException 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: to 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: be 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: thrown 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,253 INFO  by.epam.parsing.parser.ParagraphParser [main] Parsing sentence:
+The explicit state of a matcher is recomputed by every match operation. 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: The 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: explicit 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: state 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: of 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: a 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: matcher 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: is 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: recomputed 
+2016-07-09 17:51:34,254 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: by 
+2016-07-09 17:51:34,255 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: every 
+2016-07-09 17:51:34,255 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: match 
+2016-07-09 17:51:34,255 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: operation 
+2016-07-09 17:51:34,255 INFO  by.epam.parsing.parser.SentenceParser [main] Lexeme: . 
+2016-07-09 17:51:34,255 INFO  by.epam.parsing.util.Main [main] Text has been parsed 
+2016-07-09 17:51:34,405 INFO  by.epam.parsing.util.Main [main] Start sorting lexemes 
+2016-07-09 17:51:34,561 INFO  by.epam.parsing.util.Main [main] Result:
+, 
+. 
+; 
+a about against all also an and any appendreplacement appendtail are as at attempting attempts 
+be before beginning boolean boundaries buffer by 
+called can captured capturing cause changed character class collect computed constructs contains contents convenience convenient count create created 
+default defines desired details 
+each end engine entire every existing explicit 
+failure find finds for form from 
+group 
+if illegalstateexception in includes indicating indices information initially input interact interpreting into invoking is it its 
+looking lookingat 
+match matched matcher matches matching method methods modified more most 
+new next 
+obtained of on operation operations or order 
+part pattern performs provided 
+queried query querying 
+recent recomputed region regionend regionstart replaceall replaced replacing result returning returns 
+scans see sequence some start starting state string strings subsequence subsequences subset success successful such 
+tandem that the theregion these this thrown to total 
+undefined useanchoringbounds used usetransparentbounds 
+via 
+way well which whose will with 
+ 
+2016-07-09 17:51:34,568 INFO  by.epam.parsing.util.Main [main] Text reporter has been created 
+2016-07-09 17:51:34,589 INFO  by.epam.parsing.util.Main [main] Result:
+An engine that performs match operations on a character sequence by interpreting a Pattern. 
+A matcher is created from a pattern by invoking the matcher method. 
+The matches method attempts to match the entire input sequence against the pattern. 
+The lookingAt method attempts to match the input sequence, starting at the beginning, against the pattern. 
+The find method scans the input sequence looking for the next subsequence that matches the pattern. 
+Each of these methods returns a boolean indicating success or failure. More information about a successful match can be obtained by querying the state of the matcher. 
+A matcher finds matches in a subset of its input called the region. By default, the region contains all of the input. The region can be modified via theregion method and queried via the regionStart and regionEnd methods. The way that the region boundaries interact with some pattern constructs can be changed. See useAnchoringBounds and useTransparentBounds for more details. 
+This class also defines methods for replacing matched subsequences with new strings whose contents can, if desired, be computed from the match result. The appendReplacement and appendTail methods can be used in tandem in order to collect the result into an existing string buffer, or the more convenient replaceAll method can be used to create a string in which every matching subsequence in the input sequence is replaced. 
+The explicit state of a matcher includes the start and end indices of the most recent successful match. It also includes the start and end indices of the input subsequence captured by each capturing group in the pattern as well as a total count of such subsequences. As a convenience, methods are also provided for returning these captured subsequences in string form. 
+The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an IllegalStateException to be thrown. The explicit state of a matcher is recomputed by every match operation. 
+ 
